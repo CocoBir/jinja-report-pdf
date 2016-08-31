@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        {% block head %}
+        <title>{% block title %}{% endblock %}</title>
+        {% endblock %}
+    </head>
+
+    <body>
+		<div id="content">{% block content %}{% endblock %}</div>
+		<div id="footer">
+			{% block footer %}
+			&copy; Copyright 2016 by <a href="http://smileboywtu.github.io">smileboywtu</a>.
+			{% endblock %}
+		</div>
+    </body>
+
+</html>
